@@ -23,7 +23,7 @@ const User: FC = () => {
         if (timer) clearInterval(timer)
         timer = setInterval(async() => {
             const res = await getQRCodeState(key)
-            console.log(res)
+            // console.log(res)
             // 登录成功
             if (res.code === 802) {
                 setUserInfo({
